@@ -1,0 +1,15 @@
+[
+    {
+        "school":"Virginia Tech",
+        "degree":"Master of Science",
+        "major":"Computer Engineering",
+        "notes":"Distributed Systems",
+        "range":"2016 - 2018"
+    },
+    {
+        "school":"Punjab Engineering College",
+        "degree":"Bachelor of Engineering",
+        "major":"Electronics and Electrical Communication",
+        "range":"2009 - 2013"
+    }
+]

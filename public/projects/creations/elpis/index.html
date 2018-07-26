@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Elpis</title>
+  <meta property="og:title" content="Elpis" />
+  <meta property="og:image" content="https://mogarg.github.io/img/mohit.jpg" />
+  <meta name="description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud.">
+  <meta property="og:description" content="Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud." />
+  <meta name="author" content="Mohit Garg">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="https://mogarg.github.io/css/resume.css" rel="stylesheet">
+  <link href="https://mogarg.github.io/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.45.1" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Mohit Garg</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/mohit.jpg" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#skills">Skills</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+      
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://mogarg.github.io/">Home</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://mogarg.github.io/projects/">Projects</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://mogarg.github.io/projects/creations/">Projects</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://mogarg.github.io/projects/creations/elpis/">Elpis</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex d-column">
+  <div class="my-auto">
+    <h2 class="mb-0"><span class="text-primary">Elpis</span></h2>
+    
+
+<h2 id="motivation">Motivation</h2>
+
+<p>While internet services are designed and deployed with an assumption of perimeter less security at the application layer, most production distributed systems today are designed assuming a classical Crash Fault Tolerant (CFT) model. In realistic deployment scenarios, keeping track of all bridged networks such as smartphones, network printers, etc. is almost impossible. Hence, designing distributed systems without considering the possibility of an active adversary makes the system vulnerable from its core. While there exists extensive research on Byzantine Fault Tolerant (BFT) systems, overheads associated with such solutions preclude widespread adoption.</p>
+
+<h2 id="problems">Problems</h2>
+
+<p>Cross Fault Tolerance (XFT) by Liu et al. addresses this problem by providing stronger consistency and availability guarantees than both the CFT and BFT under the assumption that a majority of replicas are correct and can communicate with each other synchronously. XPaxos designed by Liu et al. assuming the XFT model achieves similar throughput and latency as Paxos. However, it brings two challenges. One it fails to provide comparable performance as the number of faults are higher than one. Secondly, since it is reliant on a single leader for ordering commands, it suffers from similar bottlenecks as Multi-Paxos, the widely adopted and deployed version of Paxos. Designing a multi-leader consensus algorithm like M2Paxos can solve the second problem. However, M2Paxos does not guarantee liveness under contention, and the Byzantine nodes in the system can further exacerbate this problem by increasing the conflicting commands.</p>
+
+<h2 id="solution">Solution</h2>
+
+<p>To solve the problem of liveness in M2Paxos, I designed a leader-election algorithm which provides liveness while providing weak-consistency for object ownership. The weak consistency assumption implies that even though all nodes don&rsquo;t agree on a single leader for objects accessed by conflicting commands at all times, they can have these commands decided by forwarding their request to a node that they have elected as the leader. Ultimately, if there are no new conflicting commands proposed all nodes agree on a unique leader. The ownership acquisition for commands don&rsquo;t conflict can still execute in parallel. To make this Byzantine Fault-Tolerant I plan to use Verifiable Random Functions where nodes generate random tags which can be verified by other nodes. This algorithm can be leveraged to design a multi-leader Byzantine Fault Tolerant consensus algorithm which provides higher performance than XPaxos and which does not incur extra deployment costs.</p>
+
+<h2 id="status">Status</h2>
+
+<ul class="task-list">
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Implement M2Paxos in JGroups</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Test and Benchmark M2Paxos</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Design leader election</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Byzantine leader election</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Byzantine Agreement</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Implementation</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Test and Benchmark Elpis</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Writeup</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Submit to a conference</label></li>
+</ul>
+
+    
+    <ul class="tags">
+    
+      <li><a class="tag" href="/tags/byzantine-fault-tolerance">Byzantine Fault-Tolerance</a></li>
+    
+      <li><a class="tag" href="/tags/blockchains">Blockchains</a></li>
+    
+      <li><a class="tag" href="/tags/dht">DHT</a></li>
+    
+      <li><a class="tag" href="/tags/java">Java</a></li>
+    
+</ul>
+
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=XX-123446-01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'XX-123446-01');
+  </script>
+  
+
+  
+</body>
+</html>

@@ -1,0 +1,50 @@
+baseURL = "https://mogarg.github.io"
+languageCode = "en-us"
+title = "Mohit Garg"
+theme = "resume"
+
+[params]
+    firstName = "Mohit"
+    lastName = "Garg"
+    address = "Blacksburg, VA"
+    phone = "1-540-449-3550"
+    contactNote = "Masters in Computer Science @ Virginia Tech"
+    profileImage = "img/mohit.jpg"
+    email = "mohitce@vt.edu"
+    description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud."
+    favicon = "images/favicon.ico"
+    # what sections
+    showSkills = true
+    showProjects = true
+    showOpenSource = false
+    showPublications = false 
+    showExperience = true
+    showEducation = true
+
+    showQr = true
+
+[[params.handles]]
+    name = "LinkedIn"
+    link = "https://www.linkedin.com/in/mogarg/"
+
+
+[[params.handles]]
+    name = "GitHub"
+    link = "https://github.com/mogarg/"
+
+# [[params.handles]]
+#     name = "Bitbucket"
+#     link = "https://bitbucket.org/eddiewebb/"
+
+# [[params.handles]]
+#     name = "Stack Overflow"
+#     link = "https://stackoverflow.com/users/story/82880"
+#     icon = "stack-overflow"
+
+[[params.handles]]
+    name = "Keybase"
+    link = "https://keybase.io/edwardawebb"
+    icon = "key"
+
+[params.google.analytics]
+    trackerID = "XX-123446-01"

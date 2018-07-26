@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Mohit Garg</title>
+    <link>https://mogarg.github.io/tags/java/</link>
+    <description>Recent content in Java on Mohit Garg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Feb 2018 12:41:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://mogarg.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Atlassian Deployment Triggers</title>
+      <link>https://mogarg.github.io/projects/contributions/deploy-triggers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mogarg.github.io/projects/contributions/deploy-triggers/</guid>
+      <description>Addressed pretty significant page load performance issue founde in larger deployments. Eliminates uses of intensive backend query, replacing it with an asynchronous API call against a lucene index. This change reduces page load from from 2+ minutes to nearly instant, with an incredibly responsive UI.</description>
+    </item>
+    
+    <item>
+      <title>Elpis</title>
+      <link>https://mogarg.github.io/projects/creations/elpis/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://mogarg.github.io/projects/creations/elpis/</guid>
+      <description>Motivation While internet services are designed and deployed with an assumption of perimeter less security at the application layer, most production distributed systems today are designed assuming a classical Crash Fault Tolerant (CFT) model. In realistic deployment scenarios, keeping track of all bridged networks such as smartphones, network printers, etc. is almost impossible. Hence, designing distributed systems without considering the possibility of an active adversary makes the system vulnerable from its core.</description>
+    </item>
+    
+  </channel>
+</rss>

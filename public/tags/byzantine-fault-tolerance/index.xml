@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Byzantine Fault Tolerance on Mohit Garg</title>
+    <link>https://mogarg.github.io/tags/byzantine-fault-tolerance/</link>
+    <description>Recent content in Byzantine Fault Tolerance on Mohit Garg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Feb 2018 12:41:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://mogarg.github.io/tags/byzantine-fault-tolerance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elpis</title>
+      <link>https://mogarg.github.io/projects/creations/elpis/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://mogarg.github.io/projects/creations/elpis/</guid>
+      <description>Motivation While internet services are designed and deployed with an assumption of perimeter less security at the application layer, most production distributed systems today are designed assuming a classical Crash Fault Tolerant (CFT) model. In realistic deployment scenarios, keeping track of all bridged networks such as smartphones, network printers, etc. is almost impossible. Hence, designing distributed systems without considering the possibility of an active adversary makes the system vulnerable from its core.</description>
+    </item>
+    
+  </channel>
+</rss>
