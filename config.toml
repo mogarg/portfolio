@@ -41,10 +41,15 @@ theme = "resume"
 #     link = "https://stackoverflow.com/users/story/82880"
 #     icon = "stack-overflow"
 
+# [[params.handles]]
+#     name = "Keybase"
+#     link = "https://keybase.io/edwardawebb"
+#     icon = "key"
+
 [[params.handles]]
-    name = "Keybase"
-    link = "https://keybase.io/edwardawebb"
-    icon = "key"
+      name = "Telegram"
+      link = "https://t.me/mozzat"
+      icon = "telegram"
 
 [params.google.analytics]
     trackerID = "XX-123446-01"
