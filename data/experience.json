@@ -1,43 +1,48 @@
 [
-    {
-        "role": "Graduate Research Assistant",
-        "company": "Systems Software Research Group, Virginia Tech",
-        "summary": [
-            "Researched core protocols that power Distributed Systems like Cloud and Blockchains.",
-            "Improved on current industry standards to achieve high throughput, global scalability, 99.999% availability while tolerating crashes and malicious behavior.",
-            "Designed Elpis, a multi-leader Byzantine Fault-Tolerant Consensus Protocol (submitted, pending review) which outperforms competitors by 3.5x and cuts latency by 50% in Geo-Replication.",
-            "Improved availability under high client loads by solving the livelock problem in M Paxos by designing a Collision Recovery Protocol which enables operation with 100% conflicting commands as compared to 10% earlier.",
-            "Implemented a Distributed Key-Value Store based on MPaxos, PBFT, and Zyzzyva in Java which provides throughputs to the order of 10 ops/sec."
-        ],
-        "range": "February 2016 - Present"
-    },
-    {
-        "role": "STUDENT DATA ENGINEER",
-        "company": "IT Security Office, Virginia Tech",
-        "summary": [
-            "Indexed 1 million rows of daily network log data by implementing a Kafka based pipeline for storage in the university's Elastic Search Stack",
-            "Discovered usage patterns using Spatio-temporal modeling of log data for network planning and security."
-        ],
-        "range": "May, 2016 — December, 2016 (7 months)"
-    },
-    {
-        "role": "SOFTWARE DEVELOPER",
-        "company": "VIRGINIA TECH",
-        "summary": [
-            "Developed an iOS application in Swift with a data dashboard which provides custom forms, plotting, analytics, and sharing capabilities",
-            "Enabled 15+ employees to collect sports data in the field and generate reports."
-        ],
-        "range": "March, 2016 — August, 2016 (5 months)"
-    },
-    {
-        "role": "SOFTWARE ENGINEER",
-        "company": "Indus Valley Partners",
-        "summary": [
-            "Founded the Mobile Development Team along with a fellow engineer by landing deals with 3 major Hedge Fund clients and developed multiple enterprise iOS apps for them",
-            "Optimized the device power consumption for real-time data by devising query processing and caching strategies, extending battery life by 20",
-            "Secured sensitive data on all 40+ operational devices by developing a framework to utilize Common Crypto for on-device data encryption",
-            "Implemented high-performance arithmetic calculations by utilizing SIMD instructions, allowing apps to achieve 4000x speedup for 1 million entries."
-        ],
-        "range": "June, 2013 — October, 2015 (2 years 4 months)"
-    }
+  {
+    "role": "SOFTWARE ENGINEER",
+    "company": "Bloomberg LP",
+    "range": "January 2019 - Present"
+  },
+  {
+    "role": "Graduate Research Assistant",
+    "company": "Systems Software Research Group, Virginia Tech",
+    "summary": [
+      "Researched core protocols that power Distributed Systems like Cloud and Blockchains.",
+      "Improved on current industry standards to achieve high throughput, global scalability, 99.999% availability while tolerating crashes and malicious behavior.",
+      "Designed Elpis, a multi-leader Byzantine Fault-Tolerant Consensus Protocol (submitted, pending review) which outperforms competitors by 3.5x and cuts latency by 50% in Geo-Replication.",
+      "Improved availability under high client loads by solving the livelock problem in M Paxos by designing a Collision Recovery Protocol which enables operation with 100% conflicting commands as compared to 10% earlier.",
+      "Implemented a Distributed Key-Value Store based on MPaxos, PBFT, and Zyzzyva in Java which provides throughputs to the order of 10 ops/sec."
+    ],
+    "range": "January 2017 - August 2018 (1.5 years)"
+  },
+  {
+    "role": "STUDENT DATA ENGINEER",
+    "company": "IT Security Office, Virginia Tech",
+    "summary": [
+      "Indexed 1 million rows of daily network log data by implementing a Kafka based pipeline for storage in the university's Elastic Search Stack",
+      "Discovered usage patterns using Spatio-temporal modeling of log data for network planning and security."
+    ],
+    "range": "May, 2016 — December, 2016 (7 months)"
+  },
+  {
+    "role": "SOFTWARE DEVELOPER",
+    "company": "VIRGINIA TECH",
+    "summary": [
+      "Developed an iOS application in Swift with a data dashboard which provides custom forms, plotting, analytics, and sharing capabilities",
+      "Enabled 15+ employees to collect sports data in the field and generate reports."
+    ],
+    "range": "March, 2016 — August, 2016 (5 months)"
+  },
+  {
+    "role": "SOFTWARE ENGINEER",
+    "company": "Indus Valley Partners",
+    "summary": [
+      "Founded the Mobile Development Team along with a fellow engineer by landing deals with 3 major Hedge Fund clients and developed multiple enterprise iOS apps for them",
+      "Optimized the device power consumption for real-time data by devising query processing and caching strategies, extending battery life by 20",
+      "Secured sensitive data on all 40+ operational devices by developing a framework to utilize Common Crypto for on-device data encryption",
+      "Implemented high-performance arithmetic calculations by utilizing SIMD instructions, allowing apps to achieve 4000x speedup for 1 million entries."
+    ],
+    "range": "June, 2013 — October, 2015 (2 years 4 months)"
+  }
 ]
