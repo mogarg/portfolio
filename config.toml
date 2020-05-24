@@ -20,7 +20,7 @@ theme = "resume"
     showPublications = false 
     showExperience = true
     showEducation = true
-    showBlog = true
+    showBlog = false
 
     showQr = true
 
