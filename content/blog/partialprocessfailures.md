@@ -3,7 +3,7 @@ title: "Understanding, Detecting and Localizing Partial Failures in Large System
 date: Sat, 23 May 2020 11:14:10 +0000
 draft: true
 featured: false
-tags: [distributed systems, paper, gray failures]
+tags: [distributed systems, gray failures, cloud]
 ---
 
 ## Partial failures are common
