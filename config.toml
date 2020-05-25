@@ -49,7 +49,7 @@ theme = "resume"
 
 [[params.handles]]
       name = "Telegram"
-      link = "https://t.me/mozzat"
+      link = "https://t.me/heisengarg"
       icon = "telegram"
 
 [params.google.analytics]
