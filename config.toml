@@ -10,7 +10,7 @@ theme = "resume"
     phone = "1-540-449-3550"
     contactNote = "Masters in Computer Science @ Virginia Tech"
     profileImage = "img/mohit.jpg"
-    email = "mohitce@vt.edu"
+    email = "mogarg@protonmail.com"
     description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud."
     favicon = "images/favicon.ico"
     # what sections
@@ -22,7 +22,7 @@ theme = "resume"
     showEducation = true
     showBlog = true
 
-    showQr = true
+    showQr = false
 
 [[params.handles]]
     name = "LinkedIn"
@@ -46,6 +46,11 @@ theme = "resume"
 #     name = "Keybase"
 #     link = "https://keybase.io/edwardawebb"
 #     icon = "key"
+
+[[params.handles]]
+      name = "Twitter"
+      link = "https://twitter.com/heisengarg" 
+      icon = "twitter"
 
 [[params.handles]]
       name = "Telegram"

@@ -2,12 +2,12 @@
 title: "Home"
 date: 2018-02-10T18:56:13-05:00
 sitemap:
-  priority : 1.0
+  priority: 1.0
 
 outputs:
-- html
-- rss
-- json
+  - html
+  - rss
+  - json
 ---
 
 **Hi, I'm Mohit, a Software Engineer at Bloomberg LP. I have worked on improving Distributed Systems, led Mobile Development, and I have a strong interest in building scalable solutions to solve complex problems.**

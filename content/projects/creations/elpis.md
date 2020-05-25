@@ -1,10 +1,10 @@
 ---
-  title: Elpis 
-  date: 2018-09-11T12:41:05-05:00
-  description: A Multi-leader Cross Fault-Tolerance Algorithm 
-  image: /img/elpis.png
-  featured: true
-  tags: [Byzantine Fault-Tolerance, Blockchains, DHT, Java]
+title: Elpis
+date: 2018-09-11T12:41:05-05:00
+description: A Multi-leader Cross Fault-Tolerance Algorithm
+image: /img/elpis.png
+featured: true
+tags: [Distributed Systems, Byzantine Fault-Tolerance, Blockchains, DHT, Java]
 ---
 
 ## Thesis
